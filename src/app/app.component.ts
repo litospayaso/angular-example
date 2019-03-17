@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  public title = 'angular-example';
+  public counter = 0;
+
+  increase() {
+    this.counter++;
+  }
+
+  reset() {
+    this.counter = 0;
+  }
 }

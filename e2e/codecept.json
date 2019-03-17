@@ -1,0 +1,21 @@
+{
+  "tests": "test/*_test.js",
+  "timeout": 10000,
+  "output": "output",
+  "helpers": {
+    "Puppeteer": {
+      "url": "http://localhost:4200",
+      "waitForAction": 500,
+      "windowSize":"1024x700"
+    },
+    "test_helper": {
+      "require": "./test_helper.js"
+    }
+  },
+  "include": {
+    "I": "./test_modules.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "Angular example"
+}
